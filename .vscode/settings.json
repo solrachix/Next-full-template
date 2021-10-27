@@ -1,0 +1,8 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/6d02a2a2-407a-45e9-abe4-9151967421ec/resourceGroups/Timeware/providers/Microsoft.Web/sites/SiteTimeware",
+  "appService.deploySubpath": "."
+}
