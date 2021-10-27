@@ -1,9 +1,4 @@
 {
-  "project_name": "Rocketseat Landing Page",
-  "type": "web",
-  
-  "template_url": "./public/images/cover.png",
-  "logo_url": "./src/assets/logo.svg",
-
-  "web": "./"
+  "project_name": "Template NextJS",
+  "type": "template"
 }
