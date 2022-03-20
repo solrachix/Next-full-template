@@ -13,7 +13,7 @@ export default createGlobalStyle`
     width: 100vw;
     max-height: 100vh;
 
-    background: ${props => props.theme.colors.background.light};
+    background: ${props => props.theme.colors.background.dark};
     color: ${props => props.theme.colors.text.normal};
 
     font-family: Roboto, sans-serif !important;
@@ -41,7 +41,7 @@ export default createGlobalStyle`
   }
   h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
-    color: ${({ theme }) => theme.colors.text.normal};
+    color: ${({ theme }) => theme.colors.text.title};
   }
   button {
     cursor: pointer;

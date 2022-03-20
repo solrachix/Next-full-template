@@ -4,23 +4,27 @@ export const LightTheme = {
   title: 'Light',
   colors: {
     primary: {
-      light: '#9466ff',
-      normal: '#1393FF',
-      dark: '#734bd1'
+      lighter: '#6866FB',
+      light: '#5659EB',
+      normal: '#4347FE',
+      dark: '#494CDB',
+      darker: '#3846D4'
     },
-    secondary: '#e1e1e6',
-    icons: '#41414d',
+    secondary: '#1C2028',
+    tertiary: '#2B303A',
 
     background: {
-      light: '#fff',
-      normal: '#f5f5f5',
-      dark: '#e1e1e6'
+      lighter: '#2c323f',
+      light: '#232832',
+      normal: '#1C2028',
+      dark: '#161a20',
+      darker: '#12151a'
     },
     text: {
       size: '18px',
-      highlight: '#b3b9ff',
-      normal: '#a8a8b3',
-      title: '#1b1b1b'
+      highlight: '#D4C2FF',
+      normal: '#9C98A6',
+      title: '#fff'
     },
 
     white: '#fff',

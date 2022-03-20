@@ -4,13 +4,15 @@ interface SEOProps {
   title: string
   description?: string
   keywords?: string[]
+  icon?: string
   image?: string
   shouldExcludeTitleSuffix?: boolean
   shouldIndexPage?: boolean
-  themeColor: string
+  themeColor?: string
 }
 
 export default function SEO({
+  icon,
   title,
   description,
   keywords,
@@ -22,7 +24,7 @@ export default function SEO({
   const pageTitle = `${title} ${!shouldExcludeTitleSuffix && '| Template'}`
   const pageImage = image
     ? image.startsWith('/')
-      ? `${process.env.NEXT_PUBLIC_SITE_URL}${image}`
+      ? `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}${image}`
       : image
     : null
 
@@ -38,7 +40,7 @@ export default function SEO({
       {!shouldIndexPage && <meta name="robots" content="noindex,nofollow" />}
 
       <link rel="apple-touch-icon" href="/apple-icon.png" />
-      <link rel="shortcut icon" href="favicon.png" type="image/png" />
+      <link rel="shortcut icon" href={icon} type="image/png" />
 
       <link rel="manifest" href="/manifest.json" />
 

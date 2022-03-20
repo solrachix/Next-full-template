@@ -17,7 +17,7 @@ export { Marker, Popup }
 // const Map = dynamic(import('@/components/Map'), {
 //   ssr: false,
 //   loading: function fallback() {
-//     return <div>Chargement…</div>
+//     return <div>Loading</div>
 //   }
 // })
 

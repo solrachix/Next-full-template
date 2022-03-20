@@ -5,10 +5,14 @@ const withPWA = require('next-pwa')
 module.exports = withPlugins([
   {
     distDir: 'build',
-    future: { webpack5: true },
+    swcMinify: true,
     typescript: {
       // !! WARN !!
       ignoreBuildErrors: true,
+    },
+    images: {
+      domains: [],
+      disableStaticImages: false
     }
   },
   [withPWA, { 
