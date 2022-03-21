@@ -28,7 +28,7 @@ export default function Home() {
       </h1>
 
       <Link href="/teste">
-        <a>Fazer teste de navegação ➡️</a>
+        <a>Ir para area segura ➡️</a>
       </Link>
     </Container>
   )

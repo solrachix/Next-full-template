@@ -37,4 +37,11 @@ export const Container = styled.div`
 
     color: ${props => props.theme.colors.primary.normal};
   }
+
+  button {
+    background: transparent;
+    border: none;
+
+    color: ${props => props.theme.colors.primary.normal};
+  }
 `
