@@ -8,9 +8,13 @@ export async function middleware(req: NextRequest) {
   const payload = await verifyAuth(req.cookies[USER_TOKEN])
   const page = Routes.find(route => route.path === req.page.name)
 
-  if (!payload && page?.secure) {
+  if (!payload && (page?.secure || page === undefined)) {
     url.pathname = '/login'
-    url.searchParams.append('RedirectedTo', req.page.name)
+    page !== undefined && url.searchParams.set('RedirectedTo', req.page.name)
+
+    return NextResponse.redirect(url)
+  } else if (payload && page?.authSystem) {
+    url.pathname = '/teste'
 
     return NextResponse.redirect(url)
   }

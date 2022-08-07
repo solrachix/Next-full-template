@@ -9,6 +9,7 @@ export const Routes = [
   },
   {
     path: '/login',
+    authSystem: true,
     secure: false
   }
 ]
