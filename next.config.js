@@ -8,7 +8,7 @@ module.exports = withPlugins([
     swcMinify: true,
     typescript: {
       // !! WARN !!
-      ignoreBuildErrors: true,
+      // ignoreBuildErrors: true,
     },
     images: {
       domains: [],
@@ -17,7 +17,8 @@ module.exports = withPlugins([
   },
   [withPWA, { 
     pwa: {
-      dest: 'public'
+      dest: 'public',
+      disable: process.env.NODE_ENV === 'development',
     }
   }],
   withSvgr

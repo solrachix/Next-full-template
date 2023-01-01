@@ -4,12 +4,26 @@ export const Routes = [
     secure: false
   },
   {
-    path: '/teste',
+    path: '/login',
+    authSystem: true,
+    secure: false
+  },
+  {
+    path: '/private',
     secure: true
   },
   {
-    path: '/login',
-    authSystem: true,
+    path: '/with-slug/[slug]',
+    slugs: [
+      {
+        value: 'slug-1',
+        secure: false
+      },
+      {
+        value: 'slug-2',
+        secure: true
+      }
+    ],
     secure: false
   }
 ]

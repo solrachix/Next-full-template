@@ -8,7 +8,7 @@ const api = setup({
   cache: {
     maxAge: 15 * 60 * 1000, // 15 mins
     exclude: {
-      // Only exclude POST, PUT, PATCH and DELETE methods from cache
+      // Exclua apenas os métodos POST, PUT, PATCH e DELETE do cache
       methods: ['post', 'put', 'patch', 'delete']
     }
   }
